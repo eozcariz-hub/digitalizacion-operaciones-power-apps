@@ -42,7 +42,19 @@ Incluye, entre otros:
 * Diseño para dispositivos móviles y adaptación progresiva para computadoras.
 * Disponibilidad de la información para su transformación y visualización en Power BI.
 
-## Arquitectura de la solución
+## Flujo funcional de carga
+
+```mermaid
+flowchart TD
+    A["Supervisor de Operaciones inicia la recorrida"] --> B["Selecciona zona, familia y equipo"]
+    B --> C["Completa lecturas, estados y novedades"]
+    C --> D{"¿Datos completos y dentro de rango?"}
+    D -- "No" --> E["Muestra advertencia y bloquea el envío"]
+    E --> C
+    D -- "Sí" --> F["Habilita Enviar datos"]
+    F --> G["Guarda el registro estructurado"]
+```
+
 
 ## Capturas de la aplicación
 
