@@ -120,15 +120,18 @@ Validación desarrollada con Power Fx para detectar lecturas fuera de los límit
 </tr>
 </table>
 
-```mermaid
-flowchart LR
-    A["Supervisor de Operaciones"] --> B["Power Apps"]
-    B --> C["Excel estructurado en OneDrive / SharePoint"]
-    C --> D["Power Query"]
-    D --> E["Power BI"]
-```
+## Arquitectura de la solución
 
 Power Apps funciona como canal principal de captura. Los registros se almacenan en tablas estructuradas de Excel alojadas en el entorno corporativo de OneDrive/SharePoint. Posteriormente, Power Query transforma y consolida la información para su análisis en Power BI.
+
+
+```mermaid
+flowchart LR
+    A["Supervisor de Operaciones"] --> B["Power Apps<br/>Carga y validación de datos"]
+    B --> C["Excel estructurado<br/>OneDrive / SharePoint"]
+    C --> D["Power Query<br/>Limpieza y transformación"]
+    D --> E["Power BI<br/>Visualización y análisis"]
+```
 
 ## Tecnologías utilizadas
 
