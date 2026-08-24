@@ -157,6 +157,10 @@ flowchart LR
 * Persistencia en tablas estructuradas utilizadas como fuentes de datos.
 * Evolución desde un diseño móvil de ancho fijo hacia una interfaz adaptable.
 
+## Documentación técnica
+
+* [Validaciones y ejemplos de Power Fx](docs/ejemplos-powerfx.md): fórmulas utilizadas para estandarizar datos, validar rangos, controlar campos obligatorios y gestionar el envío de formularios.
+
 ## Impacto y beneficios
 
 * Reducción considerable del tiempo requerido para tomar y registrar datos en campo.
