@@ -44,6 +44,70 @@ Incluye, entre otros:
 
 ## Arquitectura de la solución
 
+## Capturas de la aplicación
+
+### Navegación por zonas y equipos
+
+<table>
+<tr>
+<td align="center">
+<img src="imagenes/01-pantalla-principal-mobile.jpeg" width="300" alt="Pantalla principal de la aplicación"><br>
+<strong>Pantalla principal</strong><br>
+<sub>Acceso organizado a los equipos y sistemas de ambas centrales mediante zonas operativas.</sub>
+</td>
+<td align="center">
+<img src="imagenes/02-navegacion-zona-mobile.jpeg" width="300" alt="Navegación secundaria por zona"><br>
+<strong>Navegación secundaria</strong><br>
+<sub>Selección de las familias de equipos correspondientes a cada zona.</sub>
+</td>
+</tr>
+</table>
+
+### Formulario y estandarización de datos
+
+<table>
+<tr>
+<td align="center">
+<img src="imagenes/03-formulario-carga-mobile.jpeg" width="300" alt="Formulario de carga de datos"><br>
+<strong>Formulario de carga</strong><br>
+<sub>Campos específicos para registrar las lecturas y condiciones de cada equipo.</sub>
+</td>
+<td align="center">
+<img src="imagenes/04-estandarizacion-niveles-mobile.jpeg" width="300" alt="Estandarización de niveles"><br>
+<strong>Estandarización de lecturas</strong><br>
+<sub>Opciones predefinidas para reducir diferencias de escritura y errores de carga.</sub>
+</td>
+</tr>
+</table>
+
+### Validaciones de calidad
+
+<p align="center">
+<img src="imagenes/06-validacion-rango-numerico-mobile.jpeg" width="340" alt="Validación de valor fuera de rango">
+</p>
+
+<p align="center">
+<strong>Control de rangos numéricos</strong><br>
+Validación desarrollada con Power Fx para detectar lecturas fuera de los límites definidos antes de guardar la información.
+</p>
+
+### Control de campos obligatorios
+
+<table>
+<tr>
+<td align="center">
+<img src="imagenes/05-validacion-campo-obligatorio-mobile.jpeg" width="300" alt="Envío deshabilitado por campo pendiente"><br>
+<strong>Campo obligatorio pendiente</strong><br>
+<sub>El envío permanece bloqueado mientras falta completar información requerida.</sub>
+</td>
+<td align="center">
+<img src="imagenes/07-validacion-campo-completo-mobile.jpeg" width="300" alt="Envío habilitado con formulario completo"><br>
+<strong>Formulario completo</strong><br>
+<sub>Al completar el campo Novedades, se habilita el envío del registro.</sub>
+</td>
+</tr>
+</table>
+
 ```mermaid
 flowchart LR
     A["Supervisor de Operaciones"] --> B["Power Apps"]
